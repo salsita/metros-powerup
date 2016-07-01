@@ -1,4 +1,4 @@
-var ICON = './images/icon.png';
+var ICON = './images/icon.svg';
 
 var pointArray = [
    0,
