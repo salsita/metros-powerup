@@ -19,9 +19,9 @@ function getPoints(t, cardId) {
 function setPoints(t, cardId, points) {
   return t.get('card', 'shared', 'points', '{}')
     .then(function(data) {
-      var points = JSON.parse(data);
-      points[cardId] = points;
-      return t.set('card', 'shared', 'points', JSON.stringify(points));
+      var db = JSON.parse(data);
+      db[cardId] = points;
+      return t.set('card', 'shared', 'points', JSON.stringify(db));
     });
 }
 
