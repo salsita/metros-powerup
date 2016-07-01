@@ -1,3 +1,5 @@
+var ICON = './images/icon.png';
+
 var pointArray = [
    0,
    1,
@@ -35,7 +37,7 @@ var getBadges = function(t) {
     .then(function(points) {
       return {
         title: 'Points',
-        icon: './img/icon.png',
+        icon: ICON,
         text: points.toString()
       }
     });
@@ -74,7 +76,7 @@ TrelloPowerUp.initialize({
   'card-buttons': function(t) {
     return [{
       text: 'Points',
-      icon: './img/icon.png',
+      icon: ICON,
       callback: cardButtonCallback
     }];
   },
