@@ -1,7 +1,7 @@
 {
-  "name": "trello-power-up-pointing",
+  "name": "metros-powerup",
   "version": "0.1.0-dev",
-  "description": "Trello power-up for card pointing",
+  "description": "Trello power-up for Metros",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,19 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tchap/trello-power-up-pointing.git"
+    "url": "git+https://github.com/salsita/metros-powerup.git"
   },
   "keywords": [
+    "metros",
     "trello",
     "powerup",
     "pointing"
   ],
   "author": "Ondrej Kupka <ondrejk@salsitasoft.com>",
-  "license": "ISC",
+  "private": true,
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/tchap/trello-power-up-pointing/issues"
+    "url": "https://github.com/salsita/metros-powerup/issues"
   },
-  "homepage": "https://github.com/tchap/trello-power-up-pointing#readme",
+  "homepage": "https://github.com/salsita/metros-powerup#readme",
   "dependencies": {
     "boom": "^3.2.2",
     "hapi": "^13.5.0",

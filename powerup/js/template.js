@@ -1,6 +1,6 @@
 var Promise = TrelloPowerUp.Promise;
 
-var CANONICAL_URL= 'https://trello-pointing-try.herokuapp.com';
+var CANONICAL_URL= 'https://metros-powerup-prod.herokuapp.com';
 
 var ICON = './images/icon.svg';
 
@@ -17,7 +17,7 @@ var pointArray = [
 
 function getPoints(t, cardId) {
   return t
-    .get('board', 'shared', 'accessToken')
+    .get('organization', 'shared', 'accessToken')
     .then(function(token) {
       if (!token) {
         return Promise.reject('Access token is not set');
@@ -44,7 +44,7 @@ function getPoints(t, cardId) {
 
 function setPoints(t, cardId, points) {
   return t
-    .get('board', 'shared', 'accessToken')
+    .get('organization', 'shared', 'accessToken')
     .then(function(token) {
       if (!token) {
         return Promise.reject('Access token is not set');

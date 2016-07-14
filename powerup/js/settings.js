@@ -1,6 +1,6 @@
 /* global TrelloPowerUp */
 
-var CANONICAL_URL= 'https://trello-pointing-try.herokuapp.com';
+var CANONICAL_URL= 'https://metros-powerup-prod.herokuapp.com';
 
 var t = TrelloPowerUp.iframe();
 
@@ -9,7 +9,7 @@ var accessTokenSelector = document.getElementById('accessToken');
 
 t.render(function() {
   return t
-    .get('board', 'shared', 'accessToken')
+    .get('organization', 'shared', 'accessToken')
     .then(function(token) {
       canonicalURLSelector.value = CANONICAL_URL;
       if (token) {
@@ -23,7 +23,7 @@ t.render(function() {
 
 document.getElementById('save').addEventListener('click', function() {
   return t
-    .set('board', 'shared', 'accessToken', accessTokenSelector.value)
+    .set('organization', 'shared', 'accessToken', accessTokenSelector.value)
     .then(function(){
       t.closePopup();
     })

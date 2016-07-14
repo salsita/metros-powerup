@@ -1,21 +1,16 @@
 {
-  "name": "Pointing",
-  "description": "",
-  "details": "Point cards in the Scrum way.",
+  "name": "Metros",
+  "description": "Trello power-up for Metros",
+  "details": "This power-up connects your board to Metros",
   "icon": {
     "url": "./images/logo.png"
   },
-  "author": "Salsita",
+  "author": "Salsita Software",
   "capabilities": [
-    "attachment-sections",
-    "attachment-thumbnail",
-    "board-buttons",
     "callback",
     "card-badges",
     "card-buttons",
     "card-detail-badges",
-    "card-from-url",
-    "format-url",
     "show-settings"
   ],
   "connectors": {
